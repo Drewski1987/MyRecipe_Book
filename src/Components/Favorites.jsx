@@ -67,7 +67,7 @@ function handleClick(recipe){
         <div className="container">
             {
                 favorites.map((recipe)=>
-                    <div className="recipeCard" key={recipe.idMeal}>
+                    <div className="recipeCard" key={recipe.id.idMeal}>
                         <h2><strong>{recipe.strMeal}</strong></h2>
                         <img src = {recipe.strMealThumb} style = {{height: "200px"}} />
                         <br/>
