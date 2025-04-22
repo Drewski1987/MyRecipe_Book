@@ -7,7 +7,7 @@ import Authenticate from "./Authenticate"
 
 function Login ({}) {
 
-    const [username, setUsername] = useState(null);
+    const [username, setUsername] = useState("");
     const token = localStorage.getItem("token");
     const navigate = useNavigate;
 
@@ -42,7 +42,7 @@ async function getUsername (event) {
 function logOut(){
 
     localStorage.removeItem("token")
-    navigate("/login")
+    navigate("/Login")
 
 }
 
@@ -60,7 +60,7 @@ if (!token) {
 
 return (
     <div>
-      <p>Logged in as {username}</p>
+      
       <button onClick={logOut}>Log Out</button>
     </div>
   )

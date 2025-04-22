@@ -4,9 +4,11 @@ export default function NavBar ({}){
 
     return (
         <div className="navbar">
+
+            <Link to="/Login"> LogIn </Link>
             <Link to="/">Home</Link>
             <Link to="/Recipes"> Recipes </Link>
-            <Link to="/Login"> LogIn </Link>
+           
             <Link to ="/favorites"> MyFavorites </Link>
         </div>
 

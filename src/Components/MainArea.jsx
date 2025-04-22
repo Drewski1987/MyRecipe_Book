@@ -6,6 +6,7 @@ import SelectedRecipe from './SelectedRecipe'
 import Home from './Home'
 
 
+
 export default function MainArea ({}){
     return (
         <div id="mainSection">
@@ -15,6 +16,7 @@ export default function MainArea ({}){
                 <Route path = "favorites" element={<Favorites/>} />
                 <Route path = "/login" element={<Login/>} />
                 <Route path = "/recipes/:id" element={<SelectedRecipe/>}/>
+                
             </Routes>
         </div>
 
